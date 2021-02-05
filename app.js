@@ -1,11 +1,13 @@
 // import {clear} from './function.js';
 
 function myFunction() {
-  // console.log(typeof(3)==='number')
   var x = document.getElementById("Input").value;
-  // console.log(typeof(x))
-  console.log(isPrimeNumber(Number(x)))
-  document.getElementById("result").innerHTML = "You wrote: " + x;
+  if (isPrimeNumber(Number(x))){
+    document.getElementById("result").innerHTML = 'It is Prime';
+  } else {
+    document.getElementById("result").innerHTML = 'It is not Prime';
+  }
+  return false
 }
 
 function isPrimeNumber(N){
