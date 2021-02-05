@@ -2,13 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>2048</title>
+    <title>Project Euler</title>
     <link rel="stylesheet" href="style.css">
     <script type = "text/javascript" src="app.js"></script>
     <!-- <script type="module" src="app.js" charset="utf-8"></script>     -->
   </head>
   <body>
-    <input type="text" id="Input" oninput="myFunction()">
+    <h1>Put down a number</h1>
+    <!-- <input type="text" id="Input" oninput="myFunction()"> -->
+    <form onsubmit="myFunction()">
+      Put down a number: <input type="text" id="Input" name="fname">
+      <input type="submit" value="Submit">
+    </form>
     <p id="result"></p>
   </body>
 </html>
